@@ -1,0 +1,38 @@
+.gallery {
+    margin-top: 50px;
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__image {
+        flex-basis: calc(50% - 13px);
+        padding-right: 17px;
+        position: relative;
+
+        &:nth-child(even) {
+            margin-top: 45px;
+        }
+    }
+
+    .image {
+        &__position {
+            position: absolute;
+            font-size: 10px;
+            line-height: 13px;
+            font-family: 'PT Serif';
+            text-transform: uppercase;
+            transform-origin: 100% 0%;
+            transform: rotate(90deg) translateX(100%);
+            top: 0;
+            right: 0;
+        }
+
+        &__title {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}

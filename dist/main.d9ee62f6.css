@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/27px "Poppins", sans-serif;
+  color: #000;
+  font-weight: 400;
+  background-color: #fafafa;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 71px;
+  padding-bottom: 38px;
+}
+.header__title {
+  font-family: "PT Serif";
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 38px;
+}
+.header__subtitle {
+  font-family: "Poppins";
+  max-width: 439px;
+}
+.header__subtitle h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.header__subtitle p {
+  line-height: 21px;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+.gallery__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery__image {
+  flex-basis: calc(50% - 13px);
+  padding-right: 17px;
+  position: relative;
+}
+.gallery__image:nth-child(even) {
+  margin-top: 45px;
+}
+.gallery .image__position {
+  position: absolute;
+  font-size: 10px;
+  line-height: 13px;
+  font-family: "PT Serif";
+  text-transform: uppercase;
+  transform-origin: 100% 0%;
+  transform: rotate(90deg) translateX(100%);
+  top: 0;
+  right: 0;
+}
+.gallery .image__title {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer {
+  margin-top: 88px;
+  margin-bottom: 68px;
+  color: #A9A9A9;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__text {
+    flex-direction: row;
+  }
+  .header__subtitle p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .gallery {
+    margin-top: 96px;
+  }
+  .gallery__image {
+    flex-basis: calc(33.3333% - 32px);
+  }
+  .gallery__image:nth-child(even) {
+    margin-top: unset;
+  }
+  .gallery__image:nth-child(n+4) {
+    margin-top: 20px;
+  }
+  .gallery__image:nth-child(3n+2) {
+    margin-top: 90px;
+  }
+  .gallery .image__position {
+    font-size: 12px;
+    line-height: 15px;
+    right: -10px;
+  }
+  .gallery .image__title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .footer {
+    margin-top: 109px;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=/main.d9ee62f6.css.map */

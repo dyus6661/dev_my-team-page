@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+    .header {
+        &__text {
+            flex-direction: row;
+        }
+
+        &__subtitle {
+            p {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .gallery {
+        margin-top: 96px;
+
+        &__image {
+            flex-basis: calc(33.3333% - 32px);
+
+            &:nth-child(even) {
+                margin-top: unset;
+            }
+
+            &:nth-child(n + 4) {
+                margin-top: 20px;
+            }
+
+            &:nth-child(3n + 2) {
+                margin-top: 90px;
+            }
+        }
+
+        .image {
+            &__position {
+                font-size: 12px;
+                line-height: 15px;
+                right: -10px;
+            }
+
+            &__title {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 109px;
+        margin-bottom: 30px;
+    }
+}
