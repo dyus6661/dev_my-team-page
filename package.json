@@ -6,7 +6,9 @@
   "name": "my-team-page",
   "description": "Project for DEV Challenge",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "parcel-bundler": "1.12.4"
+  },
   "scripts": {
     "serve": "cross-env NODE_ENV=development parcel serve index.html",
     "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --no-content-hash"
